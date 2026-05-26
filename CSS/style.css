@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+:root{
+    --main-color: #f73471;
+    --black: #000;
+    --light-color: #868e96;
+}
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+::selection{
+     background: var(--main-color);
+     color: white;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: white;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--main-color);
+    border-radius: 5rem;
+}
+
+/*----------------------------------------header section starts-----------------------------*/
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    box-shadow: 0rem .1rem .5rem rgba(0,0,0,.1);
+    z-index: 1000;
+}
+
+.header .logo{
+    font-size: 2.4rem;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    white-space: nowrap;
+}
+
+.header .logo span{
+    color: var(--main-color);
+}
+
+.header .navbar{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.header .navbar a{
+    font-size: 1.5rem;
+    color: var(--black);
+    margin: 0;
+    white-space: nowrap;
+}
+
+.header .icons{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header .icons div:hover{
+    transform: rotate(180deg);
+    color: var(--main-color);
+}
+
+.header .icons a{
+    font-size: 1.3rem;
+    letter-spacing: .1rem;
+    color: #fff;
+    background: var(--main-color);
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 1rem 1.8rem;
+    white-space: nowrap;
+}
