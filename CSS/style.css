@@ -266,15 +266,98 @@ section{
 }
 
 .btn{
-    margin: top 1rem;
+    margin-top: 1rem;
     display: inline-block;
     padding: .8rem 3rem;
     background: #fff;
     font-weight: 500;
     cursor: pointer;
     color: var(--main-color);
-    Font-size: 1.7rem;
+    font-size: 1.7rem;
 }
 
 
+/* About section */
 
+.section-about{
+    background: #f4f1ff;
+    padding: 8rem 9%;
+}
+
+.section-about .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.about-banner img{
+    width: 35rem;
+    height: 35rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: .1rem solid var(--main-color);
+}
+
+
+/* About section */
+
+.section-about{
+    background: #f4f1ff;
+    padding: 8rem 9%;
+}
+
+.section-about .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6rem;
+}
+
+.about-banner{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-banner img{
+    width: 38rem;
+    height: 38rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: .2rem solid var(--main-color);
+    box-shadow: 0 .5rem 2rem rgba(0,0,0,.2);
+}
+
+.about-content{
+    flex: 1;
+}
+
+.about-tag{
+    display: inline-block;
+    background: #eadfff;
+    color: var(--main-color);
+    padding: .8rem 1.5rem;
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.about-content h2{
+    font-size: 4rem;
+    color: #111;
+    margin-bottom: 1.5rem;
+}
+
+.about-content p{
+    font-size: 1.6rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.about-btn{
+    background: var(--main-color);
+    color: #fff;
+}
