@@ -209,44 +209,64 @@ section{
 @media (max-width:768px){
 
     #menu-btn{
-    display: inline-block;
+        display: inline-block;
+    }
+
+    .header .icons{
+        position: relative;
+        z-index: 1002;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background: rgba(0,0,0,.9);
+        border-top: .1rem solid #ccc;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        padding: 1rem 0;
+        z-index: 999;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .header .navbar a{
+        display: block;
+        width: 100%;
+        margin: 1rem 2rem;
+        font-size: 2rem;
+    }
+
+    .section-about .container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-banner img{
+        width: 28rem;
+        height: 28rem;
+    }
+
+    .about-content{
+        width: 100%;
+    }
+
+    .about-content h2{
+        font-size: 3rem;
+    }
+
+    .about-content p{
+        font-size: 1.5rem;
+    }
 }
 
-.header .icons{
-    position: relative;
-    z-index: 1002;
-}
-
-.header .navbar{
-    position: absolute;
-    top: 100%;
-    right: 0;
-    left: 0;
-    background: rgba(0,0,0,.9);
-    border-top: .1rem solid #ccc;
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0;
-    padding: 1rem 0;
-
-    z-index: 999;
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-}
-
-.header .navbar.active{
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-}
-
-.header .navbar a{
-    display: block;
-    width: 100%;
-    margin: 1rem 2rem;
-    font-size: 2rem;
-}
-
-}
 /*------------------------------for max-width 450px---------------- */
 @media (max-width:450px){
 
@@ -284,13 +304,6 @@ section{
     padding: 8rem 9%;
 }
 
-.section-about .container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 4rem;
-}
-
 .about-banner img{
     width: 35rem;
     height: 35rem;
@@ -299,13 +312,6 @@ section{
     border: .1rem solid var(--main-color);
 }
 
-
-/* About section */
-
-.section-about{
-    background: #f4f1ff;
-    padding: 8rem 9%;
-}
 
 .section-about .container{
     display: flex;
@@ -320,14 +326,6 @@ section{
     justify-content: center;
 }
 
-.about-banner img{
-    width: 38rem;
-    height: 38rem;
-    object-fit: cover;
-    border-radius: 50%;
-    border: .2rem solid var(--main-color);
-    box-shadow: 0 .5rem 2rem rgba(0,0,0,.2);
-}
 
 .about-content{
     flex: 1;
