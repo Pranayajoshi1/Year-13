@@ -359,3 +359,141 @@ section{
     background: var(--main-color);
     color: #fff;
 }
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+}
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* ================= CATEGORY SECTION ================= */
+
+.category{
+    background: #f4f1ff;
+    padding: 6rem 5%;
+    text-align: center;
+}
+
+.category h2{
+    font-size: 3rem;
+    color: #111;
+    margin-bottom: 3rem;
+}
+
+/* slider wrapper */
+.slider-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* cards row */
+.category-container{
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+    width: 90rem;
+}
+
+/* cards */
+.category-card{
+    min-width: 26rem;
+    background: #fff;
+    border-radius: 1.8rem;
+    overflow: hidden;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.08);
+    flex-shrink: 0;
+    transition: .3s ease;
+      min-width: 38rem;
+    max-width: 38rem;
+}
+
+.category-card:hover{
+    transform: translateY(-5px);
+}
+
+/* pink top */
+.card-top{
+    background: #ffb6c1;
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0 0 3rem 3rem;
+}
+
+/* image */
+.card-top img{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: .3rem solid #fff;
+}
+
+/* title */
+.category-card h3{
+    font-size: 1.8rem;
+    color: #111;
+    margin: 2rem 1rem 1rem;
+}
+
+/* description */
+.category-card p{
+    min-height: 6rem;
+    padding: 0 1.5rem;
+    color: #666;
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+
+/* button */
+.category-card a{
+    display: inline-block;
+    margin: 1.5rem 0 2rem;
+    padding: .8rem 1.8rem;
+    background: var(--main-color);
+    color: #fff;
+    border-radius: .8rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.category-card a:hover{
+    background: #111;
+}
+
+/* arrows */
+.slider-btn{
+    width: 4.5rem;
+    height: 4.5rem;
+     border-radius: 50%;
+ background: #fff;
+box-shadow: 0 .3rem 1rem rgba(0,0,0,.15);
+cursor: pointer;
+ font-size: 1.8rem;
+color: #111;
+}
+
+.slider-btn:hover{
+    background: var(--main-color);
+    color: #fff;
+}
+
+/* mobile */
+@media (max-width:768px){
+
+    .category-container{
+        width: 26rem;
+    }
+
+}

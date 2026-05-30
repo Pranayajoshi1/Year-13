@@ -22,9 +22,14 @@ window.onscroll = () => {
         document.querySelector('.header').classList.remove('active');
       }
 
-
-
 }
 
+function slideLeft() {
+    document.getElementById("categorySlider").scrollLeft -= 350;
+}
+
+function slideRight() {
+    document.getElementById("categorySlider").scrollLeft += 350;
+}
 
 
