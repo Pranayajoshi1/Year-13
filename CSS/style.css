@@ -4,6 +4,7 @@
     --main-color: #f73471;
     --black: #000;
     --light-color: #868e96;
+    
 }
 
 
@@ -472,7 +473,7 @@ section{
     background: #111;
 }
 
-/* arrows */
+
 .slider-btn{
     width: 4.5rem;
     height: 4.5rem;
@@ -489,11 +490,32 @@ color: #111;
     color: #fff;
 }
 
-/* mobile */
+
 @media (max-width:768px){
 
     .category-container{
         width: 26rem;
     }
 
+}
+.mistakes-hero{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 10rem 9% 5rem;
+}
+
+.mistakes-content h1{
+    font-size: 5rem;
+    color: #fff;
+}
+
+.mistakes-content h1 span{
+    color: var(--main-color);
+}
+
+.mistakes-content p{
+    font-size: 1.7rem;
+    color: #eee;
+    margin-top: 1rem;
 }
