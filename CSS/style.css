@@ -519,3 +519,193 @@ color: #111;
     color: #eee;
     margin-top: 1rem;
 }
+
+/* Mistakes Section */
+
+.mistakes{
+    padding: 6rem 9%;
+    background: #fff;
+}
+
+.mistakes .heading{
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 4rem;
+    color: #111;
+}
+
+.mistakes-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.mistake-card{
+    background: #fff;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 .3rem 1.5rem rgba(0,0,0,.08);
+}
+
+.mistake-top{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.mistake-top img{
+    width: 7rem;
+    height: 7rem;
+    background: #ffd8e5;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.mistake-top h3{
+    font-size: 2rem;
+    color: #111;
+}
+
+.mistake-card p{
+    font-size: 1.5rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.fix{
+    border-top: .1rem solid #eee;
+    padding-top: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+
+.fix span{
+    color: #f73471;
+    font-weight: 600;
+}
+
+/* Fitness Tips Section */
+
+.fitness-tips{
+    padding: 5rem 9%;
+    background: #fff;
+    text-align: center;
+}
+
+.fitness-tips .heading{
+    font-size: 3rem;
+    color: #111;
+    margin-bottom: 3rem;
+}
+
+.tips-container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.5rem;
+}
+
+.tip-card{
+    background: #fff;
+    padding: 2rem 1rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 .3rem 1.5rem rgba(0,0,0,.08);
+}
+
+.tip-img{
+    width: 8rem;
+    height: 8rem;
+    background: #ffb6c1;
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tip-img img{
+    width: 7rem;
+    height: 7rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.tip-card h3{   
+    font-size: 1.4rem;
+    color: #111;
+    line-height: 1.4;
+}
+
+@media (max-width:991px){
+    .tips-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width:768px){
+    .tips-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+   
+/* Diet Hero Section  */
+
+.diet-hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:8rem 9%;
+    gap:5rem;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(214, 74, 74, 0.65));
+}
+
+.diet-content h1{
+    font-size:5.5rem;
+    color:#fff;    line-height:1.2;
+    margin:1rem 0 2rem;
+}
+
+.diet-content span{
+    color:#f73471;
+    font-size:1.5rem;
+    font-weight:600;
+    letter-spacing:1px;
+}
+
+.diet-content h1{
+    font-size:5.5rem;
+    color:#111;
+    line-height:1.2;
+    margin:1rem 0 2rem;
+}
+
+.diet-content h1 span{
+    font-size:inherit;
+    color:#f73471;
+}
+
+.diet-content p{
+    font-size:1.8rem;
+    color:#ddd;
+    line-height:1.8;
+    margin-bottom:3rem;
+    max-width:55rem;
+}
+
+.diet-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.diet-image img{
+    width:100%;
+    max-width:650px;
+    border-radius:2rem;
+    object-fit:cover;
+    box-shadow:0 10px 35px rgba(0,0,0,.45);
+}
