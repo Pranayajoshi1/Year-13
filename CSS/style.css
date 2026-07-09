@@ -654,13 +654,17 @@ color: #111;
 /* Diet Hero Section  */
 
 .diet-hero{
+    position: relative;
+    height: 70vh;
     display:flex;
+    justify-content:center;
     align-items:center;
-    justify-content:space-between;
-    padding:8rem 9%;
-    gap:5rem;
-
-    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(214, 74, 74, 0.65));
+    text-align:center;
+    padding:0 9%;
+    background: linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+    url("../Images/Diet.png");
+    background-size:cover;
+    background-position:center;
 }
 
 .diet-content h1{
@@ -671,41 +675,113 @@ color: #111;
 
 .diet-content span{
     color:#f73471;
-    font-size:1.5rem;
+    font-size:5.7rem;
     font-weight:600;
-    letter-spacing:1px;
+    letter-spacing:2px;
 }
 
 .diet-content h1{
-    font-size:5.5rem;
-    color:#111;
+    font-size:6rem;
+    color:#fff;
+    margin:2rem 0;
     line-height:1.2;
-    margin:1rem 0 2rem;
 }
 
 .diet-content h1 span{
-    font-size:inherit;
     color:#f73471;
 }
 
 .diet-content p{
-    font-size:1.8rem;
-    color:#ddd;
+    color:#eee;
+    font-size:2rem;
     line-height:1.8;
-    margin-bottom:3rem;
-    max-width:55rem;
+    max-width:70rem;
+    margin:auto;
+}
+/* Essential Nutrients */
+
+.nutrients{
+
+    padding:8rem 9%;
+    background:#e7b8b8;
+
 }
 
-.diet-image{
-    flex:1;
-    display:flex;
-    justify-content:center;
+.nutrients .heading{
+
+    text-align:center;
+    font-size:4.5rem;
+    color:#fff;
+    margin-bottom:2rem;
+
 }
 
-.diet-image img{
-    width:100%;
-    max-width:650px;
-    border-radius:2rem;
-    object-fit:cover;
-    box-shadow:0 10px 35px rgba(0,0,0,.45);
+.nutrients .heading-text{
+
+    max-width:80rem;
+    margin:0 auto 6rem;
+    text-align:center;
+    font-size:1.8rem;
+    color:#000000;
+    line-height:1.8;
+
+}
+
+.nutrients-grid{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:3rem;
+
+}
+
+.nutrient-card{
+
+    background:#fff;
+    border-radius:18px;
+    padding:3rem;
+    text-align:center;
+    transition:.3s;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+}
+
+.nutrient-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.nutrient-card img{
+
+    width:90px;
+    height:90px;
+    object-fit:contain;
+    margin-bottom:2rem;
+
+}
+
+.nutrient-card h3{
+
+    font-size:2.8rem;
+    color:#f73471;
+    margin-bottom:1.5rem;
+
+}
+
+.nutrient-card p{
+
+    font-size:1.6rem;
+    line-height:1.8;
+    color:#555;
+    margin-bottom:2.5rem;
+
+}
+
+.water-card{
+
+    grid-column:1 / span 2;
+    width:50%;
+    justify-self:center;
+
 }
