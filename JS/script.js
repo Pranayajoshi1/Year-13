@@ -24,12 +24,16 @@ window.onscroll = () => {
 
 }
 
-function slideLeft() {
-    document.getElementById("categorySlider").scrollLeft -= 350;
-}
+const tabs = document.querySelectorAll(".tab-btn");
+const contents = document.querySelectorAll(".exercise-content");
 
-function slideRight() {
-    document.getElementById("categorySlider").scrollLeft += 350;
-}
-
-
+tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+        tabs.forEach(btn => btn.classList.remove("active"));
+        contents.forEach(content => content.classList.remove("active"));
+        tab.classList.add("active");
+        document
+            .getElementById(tab.dataset.target)
+            .classList.add("active");
+    });
+});
