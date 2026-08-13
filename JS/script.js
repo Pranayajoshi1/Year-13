@@ -1,5 +1,4 @@
 
-// For header
 
 let menu = document.querySelector('#menu-btn');
 let navbar = document.querySelector('.navbar');
@@ -10,7 +9,6 @@ menu.onclick = () => {
 };
 
 
-// for window scroll 
 
 window.onscroll = () => {
      menu.classList.remove('fa-times');
@@ -23,6 +21,15 @@ window.onscroll = () => {
       }
 
 }
+
+function slideLeft() {
+    document.getElementById("categorySlider").scrollLeft -= 350;
+}
+
+function slideRight() {
+    document.getElementById("categorySlider").scrollLeft += 350;
+}
+
 
 const tabs = document.querySelectorAll(".tab-btn");
 const contents = document.querySelectorAll(".exercise-content");
