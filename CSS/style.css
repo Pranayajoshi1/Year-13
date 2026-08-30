@@ -178,7 +178,7 @@ section{
 }
 
 .video-container {
-    width: 500px;
+    width: 650px;
     max-width: 90%;
     aspect-ratio: 16 / 9;
     overflow: hidden;
@@ -1733,7 +1733,7 @@ color: #111;
 }
 
 .section-title h2{
-    font-size: 42px;
+    font: size 1.2px;
     color: #111;
     margin-bottom: 12px;
     font-weight: 700;
@@ -1839,7 +1839,7 @@ color: #111;
 
 
 .food-box h3 {
-    background: #f7b800;
+    background: #0a0a0a;
     color: white;
     padding: 10px;
     border-radius: 8px;
@@ -1849,7 +1849,7 @@ color: #111;
 
 
 .mineral h3 {
-    background: #5c9f2d;
+    background: #080808;
 }
 
 
@@ -1889,7 +1889,7 @@ color: #111;
 
 
 .tips-card h2 {
-    color: #e9a900;
+    color: #040404;
     font-size: 25px;
 }
 
@@ -1910,7 +1910,7 @@ color: #111;
 
 .tips-card li::before {
     content: "✓";
-    color: #f7b800;
+    color: #060606;
     font-size: 22px;
     font-weight: bold;
     margin-right: 12px;
