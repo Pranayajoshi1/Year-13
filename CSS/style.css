@@ -170,7 +170,55 @@ section{
     
 }
 
+/* Protein Shake Video */
+.video-section {
+    display: flex;
+    justify-content: center;
+    margin: 40px auto 15px;
+}
 
+.video-container {
+    width: 500px;
+    max-width: 90%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+.video-credit {
+    text-align: center;
+    font-size: 16px;
+    margin: 10px 0 40px;
+    color: #333;
+}
+
+.video-credit a {
+    color: #b01891;
+    text-decoration: none;
+}
+
+.video-credit a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .video-container {
+        width: 90%;
+        border-radius: 15px;
+    }
+
+    .video-credit {
+        font-size: 14px;
+    }
+}
 
 
 
@@ -2244,7 +2292,7 @@ color: #111;
 
 
 .calorie-calculator {
-    background: #6a6969;
+    background: #fbfbfb;
     padding: 60px 7%;
     color: #fff;
 }
@@ -2268,9 +2316,6 @@ color: #111;
     color: #fff;
     margin-bottom: 8px;
 }
-
-
-
 
 .title-line {
     width: 50px;
@@ -2377,6 +2422,7 @@ color: #111;
     color: #fff;
 }
 
+
 .calculator-note {
     max-width: 1280px;
     margin: 20px auto 0;
@@ -2402,4 +2448,629 @@ color: #111;
     margin: 0;
 }
 
+/* =========================================================
+   MOBILE RESPONSIVE ADDITIONS
+   Added without changing the existing CSS
+   ========================================================= */
 
+@media (max-width: 768px){
+
+    /* ---------- General ---------- */
+
+    section{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+
+    /* ---------- Header ---------- */
+
+    .header{
+        padding: 1.5rem 5%;
+    }
+
+    .header .logo{
+        font-size: 2rem;
+    }
+
+    .header .icons a{
+        padding: .8rem 1rem;
+    }
+
+
+    /* ---------- Home ---------- */
+
+    .home .home-slider .box{
+        min-height: 100vh;
+        padding: 2rem 5%;
+    }
+
+    .home .home-slider .box .content{
+        width: 100%;
+    }
+
+    .home .home-slider .box .content h3{
+        font-size: 3.5rem;
+    }
+
+    .home .home-slider .box .content p{
+        font-size: 1.5rem;
+    }
+
+
+    /* ---------- About ---------- */
+
+    .section-about{
+        padding: 6rem 5%;
+    }
+
+    .section-about .container{
+        gap: 3rem;
+    }
+
+    .about-banner img{
+        width: 25rem;
+        height: 25rem;
+    }
+
+    .about-content h2{
+        font-size: 3rem;
+    }
+
+    .about-content p{
+        font-size: 1.5rem;
+    }
+
+
+    /* ---------- Category ---------- */
+
+    .category{
+        padding: 5rem 5%;
+    }
+
+    .category-container{
+        width: 26rem;
+        max-width: 100%;
+    }
+
+    .category-card{
+        min-width: 26rem;
+        max-width: 26rem;
+    }
+
+    .slider-btn{
+        width: 4rem;
+        height: 4rem;
+        flex-shrink: 0;
+    }
+
+
+    /* ---------- Mistakes ---------- */
+
+    .mistakes-hero{
+        min-height: 70vh;
+        padding: 10rem 5% 5rem;
+    }
+
+    .mistakes-content h1{
+        font-size: 3.5rem;
+    }
+
+    .mistakes-content p{
+        font-size: 1.5rem;
+    }
+
+    .mistakes{
+        padding: 5rem 5%;
+    }
+
+    .mistakes-container{
+        grid-template-columns: 1fr;
+    }
+
+
+    /* ---------- Fitness Tips ---------- */
+
+    .fitness-tips{
+        padding: 5rem 5%;
+    }
+
+    .tips-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .tip-card{
+        padding: 1.5rem .8rem;
+    }
+
+
+    /* ---------- Diet Hero ---------- */
+
+    .diet-hero{
+        height: 70vh;
+        padding: 0 5%;
+    }
+
+    .diet-content h1,
+    .diet-content h1{
+        font-size: 3.8rem;
+    }
+
+    .diet-content span,
+    .diet-content h1 span{
+        font-size: 4rem;
+    }
+
+    .diet-content p{
+        font-size: 1.5rem;
+    }
+
+
+    /* ---------- Nutrients ---------- */
+
+    .nutrients{
+        padding: 6rem 5%;
+    }
+
+    .nutrients .heading{
+        font-size: 3.2rem;
+    }
+
+    .nutrients .heading-text{
+        font-size: 1.5rem;
+        margin-bottom: 4rem;
+    }
+
+    .nutrients-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .water-card{
+        grid-column: auto;
+        width: 100%;
+    }
+
+
+    /* ---------- Meal Plans ---------- */
+
+    .meal-plans{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .meal-container{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .meal-card{
+        padding: 2.5rem;
+    }
+
+    .meal-plans .heading{
+        font-size: 3.2rem;
+    }
+
+
+    /* ---------- Protein ---------- */
+
+    .protein-about{
+        padding: 6rem 5%;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .protein-text,
+    .protein-image{
+        width: 100%;
+    }
+
+    .protein-text h2{
+        font-size: 3.2rem;
+    }
+
+    .protein-text p{
+        font-size: 1.6rem;
+    }
+
+
+    /* ---------- Protein Benefits ---------- */
+
+    .protein-benefits{
+        padding: 6rem 5%;
+    }
+
+    .benefits-grid{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+
+    /* ---------- Protein Sources ---------- */
+
+    .protein-sources{
+        flex-direction: column;
+        gap: 3rem;
+        margin-top: 4rem;
+    }
+
+    .sources-left{
+        width: 100%;
+    }
+
+    .source-columns{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .protein-tips{
+        width: 100%;
+    }
+
+
+    /* ---------- Protein Requirement ---------- */
+
+    .protein-need{
+        flex-direction: column;
+        gap: 3rem;
+        margin: 5rem 0;
+    }
+
+    .protein-need-text{
+        width: 100%;
+    }
+
+    .protein-example{
+        width: 100%;
+    }
+
+
+    /* ---------- Carbohydrates ---------- */
+
+    .carbs-intro{
+        padding: 6rem 5%;
+        flex-direction: column;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .carbs-text h2{
+        font-size: 3.2rem;
+    }
+
+    .carbs-text p{
+        font-size: 1.6rem;
+    }
+
+    .carbs-benefits{
+        padding: 2rem 5% 6rem;
+    }
+
+    .benefit-grid{
+        grid-template-columns: 1fr;
+    }
+
+
+    /* ---------- Carb Guide ---------- */
+
+    .carb-guide{
+        grid-template-columns: 1fr;
+        padding: 5rem 5%;
+        gap: 2rem;
+    }
+
+    .guide-columns{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+
+    /* ---------- Nutrition Info ---------- */
+
+    .nutrition-info{
+        flex-direction: column;
+        text-align: center;
+        padding: 5rem 5%;
+    }
+
+    .nutrition-text h2{
+        font-size: 2.8rem;
+    }
+
+    .nutrition-text p{
+        font-size: 1.6rem;
+    }
+
+
+    /* ---------- Healthy Fats ---------- */
+
+    .healthy-fats{
+        margin: 5rem auto;
+        padding: 0 5%;
+        flex-direction: column;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .fat-content h2{
+        font-size: 2.5rem;
+    }
+
+    .fat-content p{
+        font-size: 1.6rem;
+    }
+
+    .fat-types{
+        grid-template-columns: 1fr;
+    }
+
+
+    /* ---------- Fat Benefits ---------- */
+
+    .fat-benefits{
+        margin: 6rem auto;
+        padding: 0 5%;
+    }
+
+    .benefits-container{
+        grid-template-columns: 1fr;
+    }
+
+
+    /* ---------- Fat Guide ---------- */
+
+    .fat-guide{
+        margin: 6rem auto;
+        padding: 0 5%;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .fat-lists{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-bottom: 4rem;
+    }
+
+
+    /* ---------- Vitamins ---------- */
+
+    .about-vitamins{
+        padding: 6rem 5%;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .about-text{
+        width: 100%;
+    }
+
+    .about-text h2{
+        font-size: 3.2rem;
+    }
+
+    .about-text p{
+        font-size: 1.6rem;
+    }
+
+
+    /* ---------- Vitamin Cards ---------- */
+
+    .vitamins-section{
+        padding: 6rem 5%;
+    }
+
+    .vitamin-container{
+        grid-template-columns: 1fr;
+    }
+
+    .section-title h2{
+        font-size: 3.2rem;
+    }
+
+
+    /* ---------- Vitamin Sources ---------- */
+
+    .vitamin-section{
+        flex-direction: column;
+        padding: 5rem 5%;
+        gap: 2rem;
+    }
+
+    .sources-card,
+    .tips-card{
+        width: 100%;
+    }
+
+    .food-columns{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+
+    /* ---------- Exercise ---------- */
+
+    .exercise-section{
+        padding: 6rem 5%;
+    }
+
+    .exercise-section .section-title{
+        font-size: 3.2rem;
+    }
+
+    .muscle-tabs{
+        gap: 1rem;
+    }
+
+    .tab-btn{
+        padding: 1rem 1.5rem;
+        font-size: 1.5rem;
+    }
+
+    .exercise-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .exercise-card video{
+        height: 220px;
+    }
+
+
+    /* ---------- Workout Plans ---------- */
+
+    .workout-container{
+        grid-template-columns: 1fr;
+        padding: 0 5%;
+    }
+
+    .workout-title h2{
+        font-size: 3rem;
+    }
+
+    .workout-title p{
+        font-size: 1.5rem;
+    }
+
+
+    /* ---------- Footer ---------- */
+
+    .footer{
+        padding: 5rem 5% 0;
+    }
+
+    .footer .box-container{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .footer .box{
+        text-align: center;
+    }
+
+    .footer .box .text p{
+        max-width: 100%;
+    }
+
+    .social-icons{
+        justify-content: center;
+    }
+
+    .contact-info{
+        align-items: center;
+    }
+
+    .quick-links{
+        align-items: center;
+    }
+
+
+    /* ---------- Calorie Calculator ---------- */
+
+    .calorie-calculator{
+        padding: 5rem 5%;
+    }
+
+    .calculator-container{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .calculator-box{
+        padding: 2rem;
+    }
+
+    .input-row{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .calculator-note{
+        border-radius: 15px;
+        padding: 1.5rem;
+    }
+
+}
+
+    /*---------FOR PHONEE -----------------*/
+
+
+@media (max-width: 450px){
+    .header .logo{
+        font-size: 1.8rem;
+    }
+    .header .icons{
+        gap: .5rem;
+    }
+    .header .icons a{
+        font-size: 1.1rem;
+        padding: .8rem;
+    }
+    #menu-btn{
+        font-size: 2.2rem;
+    }
+
+    .home .home-slider .box .content h3{
+        font-size: 3rem;
+    }
+
+    .home .home-slider .box .content p{
+        font-size: 1.4rem;
+    }
+
+    .about-banner img{
+        width: 21rem;
+        height: 21rem;
+    }
+
+    .about-content h2{
+        font-size: 2.7rem;
+    }
+
+    .category-container{
+        width: 23rem;
+    }
+
+    .category-card{
+        min-width: 23rem;
+        max-width: 23rem;
+    }
+
+    .tips-container{
+        grid-template-columns: 1fr;
+    }
+
+    .diet-content h1,
+    .diet-content h1{
+        font-size: 3.2rem;
+    }
+
+    .diet-content span,
+    .diet-content h1 span{
+        font-size: 3.4rem;
+    }
+
+    .nutrients .heading{
+        font-size: 2.8rem;
+    }
+
+
+    .tab-btn{
+        width: 100%;
+        text-align: center;
+    }
+
+    .exercise-card video{
+        height: 200px;
+    }
+
+
+    .footer-bottom p{
+        font-size: 1.3rem;
+    }
+
+    .calculator-box{
+        padding: 1.5rem;
+    }
+
+}
